@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerlyn Manicdo | Virtual Assistant</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Inter for that crisp, clean editorial look from your reference -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-text">Elevating Your Workflow...</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Header / Nav -->
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo">VA</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#toolkit">TOOLKIT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+            <div class="hero-tag">✦ YOUR NEXT FAVORITE VIRTUAL ASSISTANT</div>
+            
+            <h1 class="hero-title">Hi there! 👋<br>I'm <span class="accent-italic">Jerlyn Manicdo</span></h1>
+            
+            <div class="hero-typewriter">
+                <span class="typed-text"></span>
+            </div>
+            
+            <p class="hero-desc">Less stress for you. More time for what matters. Think of me as your behind-the-scenes partner — the person who helps keep things running smoothly while you focus on growing your business.</p>
+            
+            <div class="btn-group">
+                <a href="#services" class="btn btn-primary">Explore my services <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.85em; margin-left: 5px;"></i></a>
+                <a href="#contact" class="btn btn-outline">Let's connect</a>
+            </div>
+        </div>
+        
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+            <div class="image-wrapper">
+                <!-- Replace with your own photo -->
+                <img src="pic.png" alt="Virtual Assistant Portrait" id="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <div id="services" class="swiper-section" data-aos="fade-up">
+        <div class="section-header">
+            <span class="section-subtitle">What I Can Do For You</span>
+            <h2 class="section-title">My Services</h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1506784365847-bbad939e9335?q=80&w=1200&auto=format&fit=crop');">
+                    <div class="slide-overlay">
+                        <h3>Administrative Support</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Email and inbox management</li>
+                            <li><i class="fas fa-check"></i> Calendar and appointment scheduling</li>
+                            <li><i class="fas fa-check"></i> Data entry and document organization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1200&auto=format&fit=crop');">
+                    <div class="slide-overlay">
+                        <h3>Social Media Support</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Content scheduling and planning</li>
+                            <li><i class="fas fa-check"></i> Caption writing and hashtag research</li>
+                            <li><i class="fas fa-check"></i> Canva graphics and visual content</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=1200&auto=format&fit=crop');">
+                    <div class="slide-overlay">
+                        <h3>Research & Org</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Internet and competitor research</li>
+                            <li><i class="fas fa-check"></i> Spreadsheet creation and management</li>
+                            <li><i class="fas fa-check"></i> Task tracking and workflow organization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop');">
+                    <div class="slide-overlay">
+                        <h3>Creative Support</h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Basic video editing</li>
+                            <li><i class="fas fa-check"></i> Presentation creation</li>
+                            <li><i class="fas fa-check"></i> Document formatting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-image" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1000&auto=format&fit=crop" alt="Organized Desk">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <span class="section-subtitle">A Little About Me</span>
+                <h3 class="about-heading">More than just <br> <span class="accent-italic">completing tasks.</span></h3>
+                <p>I'm someone who values growth, responsibility, and continuous learning. I enjoy organizing information, exploring digital tools, and finding practical ways to get things done.</p>
+                <p>I believe that great virtual assistance isn't just about ticking boxes. It's about making your workday easier, helping you stay ahead, and becoming someone you can confidently rely on.</p>
+                
+                <ul class="why-me-list">
+                    <li>✦ Detail-oriented and organized</li>
+                    <li>✦ Willing to learn and adapt</li>
+                    <li>✦ Committed to meeting deadlines</li>
+                    <li>✦ Open to feedback & improvement</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toolkit Section (Designed exactly like the cards in your image) -->
+    <section id="toolkit">
+        <div class="section-header">
+            <span class="section-subtitle">My Digital Toolkit</span>
+            <h2 class="section-title">Tools & Software</h2>
+        </div>
+        
+        <div class="skills-grid">
+            <!-- Dark Card (Like "Reliable") -->
+            <div class="skill-card dark-card" data-aos="fade-up">
+                <i class="fa-regular fa-circle-check skill-icon"></i>
+                <h3>Workspace & Office</h3>
+                <p>Google Workspace / MS Office</p>
+            </div>
+            
+            <!-- Pink Card (Like "Organized") -->
+            <div class="skill-card pink-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-wand-magic-sparkles skill-icon"></i>
+                <h3>Creative & Media</h3>
+                <p>Canva / CapCut / VN Video Editor</p>
+            </div>
+
+            <!-- Outline Card -->
+            <div class="skill-card outline-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-list-check skill-icon"></i>
+                <h3>Project Management</h3>
+                <p>Trello / Notion / Asana</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container" data-aos="fade-up">
+            <div class="contact-info">
+                <h2 class="section-title">Let's Connect!</h2>
+                <h3 class="contact-subheading">Your goals. <span class="accent-italic">My support.</span></h3>
+                <p>Looking for someone who can help you manage the little things so you can focus on the big things? Let's make it happen.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <strong>EMAIL</strong>
+                        <span>jrlynmncd@gmail.com</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>LOCATION</strong>
+                        <span>Tarlac, Philippines / UTC+8</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>AVAILABILITY</strong>
+                        <span>Monday - Friday, 9:00 AM - 5:00 PM (UTC+8)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="How can I help you manage the little things?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Illustrative style preview · &copy; 2024 Jerlyn Manicdo.</p>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
